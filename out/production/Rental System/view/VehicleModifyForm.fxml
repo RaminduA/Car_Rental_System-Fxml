@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loadDetailContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VehicleModifyFormController">
+   <children>
+      <AnchorPane prefHeight="960.0" prefWidth="1454.0" style="-fx-background-radius: 50; -fx-background-color: white;">
+         <children>
+            <Label layoutX="243.0" layoutY="235.0" prefHeight="37.0" prefWidth="344.0" text="Modify Vehile Details">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="246.0" layoutY="508.0" prefHeight="12.0" prefWidth="1056.0" />
+            <JFXButton fx:id="btnModify" buttonType="RAISED" layoutX="959.0" layoutY="672.0" onAction="#ModifyVehicleOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #ffd166; -fx-background-radius: 50;" text="Modify">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="716.0" layoutY="672.0" onAction="#BackToVehicleDetailsOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: ced4da; -fx-background-radius: 50;" text="Cancel">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="246.0" layoutY="334.0" text="Vehicle Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="790.0" layoutY="332.0" />
+            <Label layoutX="587.0" layoutY="335.0" text="Vehicle Number  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="1096.0" layoutY="332.0" prefHeight="31.0" prefWidth="214.0" />
+            <Label layoutX="1014.0" layoutY="335.0" text="Type  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="415.0" layoutY="393.0" />
+            <Label layoutX="243.0" layoutY="395.0" text="Vehicle Brand  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="824.0" layoutY="392.0" prefHeight="31.0" prefWidth="150.0" />
+            <Label layoutX="643.0" layoutY="394.0" prefHeight="26.0" prefWidth="186.0" text="Vehicle Colour  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="1170.0" layoutY="392.0" prefHeight="31.0" prefWidth="139.0" />
+            <Label layoutX="1000.0" layoutY="394.0" text="Cost For Rent  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="406.0" layoutY="449.0" />
+            <Label layoutX="243.0" layoutY="451.0" text="Cost For Hire  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="749.0" layoutY="449.0" prefHeight="31.0" prefWidth="150.0" />
+            <Label layoutX="626.0" layoutY="451.0" prefHeight="26.0" prefWidth="121.0" text="Discount  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="1031.0" layoutY="449.0" prefHeight="31.0" prefWidth="176.0" />
+            <Label layoutX="934.0" layoutY="451.0" text="Status  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="377.0" layoutY="333.0" />
+            <Label layoutX="243.0" layoutY="541.0" text="Insurence Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="401.0" layoutY="539.0" prefHeight="31.0" prefWidth="150.0" />
+            <Label layoutX="572.0" layoutY="541.0" text="Insurence Company  :  ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="800.0" layoutY="539.0" prefHeight="31.0" prefWidth="197.0" />
+            <Label layoutX="1015.0" layoutY="541.0" text="Contact  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="1117.0" layoutY="539.0" prefHeight="31.0" prefWidth="176.0" />
+            <Label layoutX="243.0" layoutY="598.0" text="Details  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="341.0" layoutY="596.0" prefHeight="31.0" prefWidth="176.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminViewDetailFormController">
+   <children>
+      <AnchorPane fx:id="manageDetailContext" layoutY="-1.0" prefHeight="961.0" prefWidth="1454.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="964.0" fitWidth="1457.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background5.png" />
+               </image>
+            </ImageView>
+            <TableView layoutX="86.0" layoutY="189.0" prefHeight="237.0" prefWidth="971.0">
+              <columns>
+                <TableColumn prefWidth="182.00003051757812" text="Rent Invoice Number " />
+                <TableColumn prefWidth="188.0" text="Rent Id" />
+                  <TableColumn prefWidth="202.0" text="Client Id" />
+                  <TableColumn prefWidth="148.0" text="Vehicle Id" />
+                  <TableColumn prefWidth="249.0" text="Total Payment" />
+              </columns>
+            </TableView>
+            <Label layoutX="86.0" layoutY="58.0" text="Rent Details">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="464.0" text="Hire Details">
+               <font>
+                  <Font name="Montserrat Medium" size="25.0" />
+               </font>
+            </Label>
+            <TableView layoutX="86.0" layoutY="611.0" prefHeight="268.0" prefWidth="993.0">
+              <columns>
+                <TableColumn prefWidth="199.00003051757812" text="Hire Invoice Number " />
+                <TableColumn prefWidth="161.0" text="Hire Id" />
+                  <TableColumn prefWidth="315.0" text="Client Id" />
+                  <TableColumn prefWidth="317.0" text="Total Payment" />
+              </columns>
+            </TableView>
+            <JFXTextField layoutX="196.0" layoutY="123.0" promptText="Rent Invoice Number">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField layoutX="226.0" layoutY="536.0" promptText="Hire Invoice Number">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="86.0" layoutY="134.0" prefHeight="21.0" prefWidth="110.0" text="Search  :">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="545.0" prefHeight="21.0" prefWidth="110.0" text="Search  :">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

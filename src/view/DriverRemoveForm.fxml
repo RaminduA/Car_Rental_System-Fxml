@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loadDetailContext" prefHeight="956.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverRemoveFormController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="961.0" prefWidth="1454.0" style="-fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="961.0" fitWidth="1482.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background4.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="217.0" layoutY="229.0" prefHeight="37.0" prefWidth="368.0" text="Remove Driver Details">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="690.0" layoutY="666.0" onAction="#BackToDriverDetailsOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: ced4da; -fx-background-radius: 50;" text="Cancel">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRemoveDriver" buttonType="RAISED" layoutX="939.0" layoutY="666.0" onAction="#DriverRemoveOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #ef476f; -fx-background-radius: 50;" text="Remove">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="222.0" layoutY="495.0" prefHeight="12.0" prefWidth="971.0" />
+            <Label layoutX="529.0" layoutY="358.0" text="Driver Name  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="683.0" layoutY="357.0" />
+            <Label layoutX="891.0" layoutY="357.0" text="Address  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="999.0" layoutY="356.0" />
+            <Label layoutX="217.0" layoutY="426.0" text="NIC  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="284.0" layoutY="425.0" prefHeight="31.0" prefWidth="226.0" />
+            <Label layoutX="537.0" layoutY="427.0" text="Contact  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="640.0" layoutY="426.0" />
+            <Label layoutX="875.0" layoutY="429.0" text="Status  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="978.0" layoutY="428.0" />
+            <Label layoutX="217.0" layoutY="536.0" text="License Id  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="338.0" layoutY="535.0" prefHeight="31.0" prefWidth="145.0" />
+            <Label layoutX="905.0" layoutY="535.0" text="Expire Date  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="1051.0" layoutY="534.0" prefHeight="31.0" prefWidth="171.0" />
+            <Label layoutX="506.0" layoutY="536.0" text="License Number  : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="696.0" layoutY="535.0" />
+            <Label layoutX="220.0" layoutY="357.0" text="Driver Id : ">
+               <font>
+                  <Font name="Montserrat Medium" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="323.0" layoutY="356.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

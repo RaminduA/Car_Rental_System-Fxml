@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loadContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientRemoveFormController">
+   <children>
+      <AnchorPane prefHeight="961.0" prefWidth="1454.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="961.0" fitWidth="1493.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/background5.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="767.0" layoutY="592.0" onAction="#backToClientDetailsOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: ced4da; -fx-background-radius: 50;" text="Cancel">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="300.0" layoutY="321.0" prefHeight="37.0" prefWidth="235.0" text="Remove Client">
+               <font>
+                  <Font name="Montserrat SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnRemoveClient" buttonType="RAISED" layoutX="1024.0" layoutY="592.0" onAction="#clientRemoveOnAction" prefHeight="54.0" prefWidth="226.0" style="-fx-background-color: #ef476f; -fx-background-radius: 50;" text="Remove">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="297.0" layoutY="409.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Client Id  : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtClientId" layoutX="415.0" layoutY="408.0" prefHeight="31.0" prefWidth="136.0" promptText="C001" styleClass="textField" />
+      <Label layoutX="576.0" layoutY="409.0" prefHeight="30.0" prefWidth="149.0" style="-fx-background-color: white;" styleClass="textLabel" text=" Client Name  : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtClientName" layoutX="716.0" layoutY="408.0" prefHeight="31.0" prefWidth="219.0" promptText="Amal Perera" styleClass="textField" />
+      <Label layoutX="972.0" layoutY="407.0" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: white;" styleClass="textLabel" text="NIC  : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNIC" layoutX="1038.0" layoutY="406.0" prefHeight="31.0" prefWidth="226.0" promptText="9989801459V" styleClass="textField" />
+      <Label layoutX="297.0" layoutY="485.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: white;" styleClass="textLabel" text="Address  : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="415.0" layoutY="485.0" prefHeight="31.0" prefWidth="235.0" promptText="Galle" styleClass="textField" />
+      <Label layoutX="716.0" layoutY="486.0" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: white;" styleClass="textLabel" text="Contact  : ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="826.0" layoutY="486.0" prefHeight="31.0" prefWidth="219.0" promptText="0785698365" styleClass="textField" />
+   </children>
+</AnchorPane>
